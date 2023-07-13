@@ -53,7 +53,7 @@ btn.addEventListener('click', async (e) => {
       let form = document.querySelector('.card');
       form.reset();
 
-      alert(jsonData.message);
+      // alert(jsonData.message);
       // Redirect to home.html or perform any other action on successful login
       window.location.href = 'home.html';
     } catch (error) {

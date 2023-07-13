@@ -190,7 +190,7 @@ body {
     position: absolute;
 }
 
-.meal .highlighted::after{
+.meal .highlighted::after {
     background: #8740CD;
 }
 
@@ -217,7 +217,7 @@ body {
     pointer-events: all;
 }
 
-.meals-container .not-appear{
+.meals-container .not-appear {
     opacity: 0;
     pointer-events: none;
 }
@@ -232,12 +232,12 @@ body {
     pointer-events: none;
 }
 
-.soft-drinks{
+.soft-drinks {
     opacity: 0;
     pointer-events: none;
 }
 
-.food-content{
+.food-content {
     transition: .5s;
 }
 
@@ -252,7 +252,7 @@ body {
     transform: scale(1.1);
 }
 
-.food:hover > .food-content:not(:hover) {
+.food:hover>.food-content:not(:hover) {
     transform: scale(.9);
     filter: blur(1px) saturate(0) contrast(1.2) brightness(.9);
 }
@@ -359,86 +359,324 @@ body {
     background: linear-gradient(119deg, #95b3fd 0%, #9763cb 53.13%, #5e1a75 100%);
 }
 
-@media screen and (max-width:1200px) {
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+    /* Styles for tablet devices */
+
     .container {
-        max-width: 1000px;
-        margin: auto;
+        padding: 0px 50px;
+    }
+
+    .sec1 {
+        height: 90vh;
     }
 
     .img1 {
-        width: 500px;
-    }
-
-    .why-box {
-        line-height: 24px;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .container {
-        max-width: 900px;
-        margin: auto;
-    }
-
-    .img1 {
-        width: 450px;
-    }
-}
-
-@media screen and (max-width:765px) {
-    .container {
-        max-width: 600px;
-        margin: auto;
-    }
-
-    .section1 {
-        display: flex;
-        align-items: center;
-        height: 80vh;
-    }
-
-    .img1 {
-        width: 350px;
+        width: 400px;
     }
 
     .main {
-        width: 40%;
+        width: 47%;
     }
 
     .main h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .main p {
-        font-size: 1.1rem;
-        text-align: left;
-        line-height: 25px;
+        font-size: 1.2rem;
+    }
+
+    #two {
+        height: 60vh;
     }
 
     .ingredients h1 {
-        font-size: 2rem
+        font-size: 2.5rem
     }
 
     .ingredients p {
-        width: 70%;
-        font-size: 1.1rem;
-        line-height: 25px;
+        font-size: 1.2rem;
     }
 
     .sec3 {
-        padding: 40px 0;
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-box {
+        /* padding: 10px; */
+        line-height: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .more-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .qualities {
+        padding-block-start: 3.5%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .meals-container {
+        height: 75rem;
+    }
+
+    .sec5 {
+        padding-top: 40px;
+    }
+
+    .photos7 {
+        height: 400px;
+    }
+
+    .sec6 {
+        padding-bottom: 20px;
+    }
+
+    .card {
+        row-gap: 40px;
+        column-gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+
+    .container {
+        padding: 0px 50px;
+    }
+
+    .sec1 {
+        height: 90vh;
+    }
+
+    .img1 {
+        width: 400px;
+    }
+
+    .main {
+        width: 47%;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+    }
+
+    #two {
+        height: 60vh;
+    }
+
+    .ingredients h1 {
+        font-size: 2.5rem
+    }
+
+    .ingredients p {
+        font-size: 1.2rem;
+    }
+
+    .sec3 {
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .why-box {
-        width: 85%;
+        width: 90%;
         line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .qualities {
+        padding-block-start: 3.5%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
     }
 
     .card_flex {
+        font-size: 1rem;
+        line-height: 30px;
         padding: 30px 20px;
+    }
+
+    .meals-container {
+        height: 150rem;
+    }
+
+    .sec5 {
+        padding-top: 40px;
+    }
+
+    .photos7 {
+        height: 300px;
+    }
+
+    .sec6 {
+        padding-bottom: 20px;
+    }
+
+    .card {
+        row-gap: 40px;
+        column-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+
+    .container {
+        padding: 0px 50px;
+    }
+
+    .sec1 {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .img1 {
+        width: 300px;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .main h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #two {
+        height: 70vh;
+    }
+
+    .ingredients h1 {
+        font-size: 2.3rem
+    }
+
+    .ingredients p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .sec3 {
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-box {
+        width: 90%;
         line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44%;
+        font-size: 1rem;
+    }
+
+    .qualities {
+        padding-block-start: 3.5%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_flex {
+        width: 75%;
+        font-size: 1rem;
+        line-height: 30px;
+        padding: 30px 20px;
+    }
+
+    .meal ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    .meals-container {
+        height: 150rem;
+    }
+
+    .sec5 {
+        padding-top: 40px;
+    }
+
+    .photos7 {
+        height: 200px;
+        gap: 10px;
+    }
+
+    .sec6 {
+        padding-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .submit {
+        width: 150px;
     }
 }
