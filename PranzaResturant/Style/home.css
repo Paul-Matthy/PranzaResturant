@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+#one {
+    background-color: #0C0B08;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+}
+
+.img1 {
+    width: 600px;
+}
+
+.main {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.main p {
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 40px;
+}
+
+#two {
+    height: 70vh;
+    background-image: linear-gradient(to bottom, #0c0b086b, #0c0b088c, #0000008c), url(../Images/creative-layout-made-fresh-vegetables-rice-grains-wooden-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ingredients {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ingredients h1 {
+    font-size: 3rem
+}
+
+.ingredients p {
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+
+#three {
+    background: #eeeeeeaa;
+}
+
+.sec3 {
+    padding: 80px 0;
+}
+
+.why-box {
+    padding: 20px;
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    color: #fff;
+    inline-size: 200px;
+    text-align: center;
+    font-size: 1rem;
+    inline-size: 60%;
+    line-height: 30px;
+}
+
+.more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+    border: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background: #fff;
+    color: #ce1212;
+}
+
+.qualities {
+    padding-block-start: 4%;
+    perspective: 1000px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.card_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    color: #0C0B08;
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+.card-1 {
+    inline-size: 30%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card-1:hover {
+    transform: translateZ(30px);
+}
+
+.icon-btn {
+    inline-size: 2rem;
+    block-size: 2rem;
+    border-radius: 100px;
+    background-color: rgb(237, 189, 197);
+    border: none;
+}
+
+.sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.meal li {
+    list-style: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.meal li::after {
+    width: 100%;
+    background: grey;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+}
+
+.meal .highlighted::after{
+    background: #8740CD;
+}
+
+.meals-container {
+    position: relative;
+    width: 100%;
+    height: 52rem;
+}
+
+.food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.meals-container .appear {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.meals-container .not-appear{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.swallow {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.soup {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.soft-drinks{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.food-content{
+    transition: .5s;
+}
+
+.food-content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.food-content:hover {
+    transform: scale(1.1);
+}
+
+.food:hover > .food-content:not(:hover) {
+    transform: scale(.9);
+    filter: blur(1px) saturate(0) contrast(1.2) brightness(.9);
+}
+
+.food-content p {
+    text-align: center;
+}
+
+.food-content p:nth-child(3) {
+    color: #8740CD;
+}
+
+#five {
+    background: #3a3628;
+}
+
+.sec5 {
+    padding-top: 40px;
+}
+
+.photos7 {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    scroll-snap-type: x mandatory;
+}
+
+/* Style the scrollbar thumb and track */
+.photos7::-webkit-scrollbar {
+    width: 0;
+}
+
+.img7 {
+    width: 25%;
+    height: 95%;
+    scroll-snap-align: start;
+    transition: 1s;
+}
+
+.img7:hover {
+    transform: scale(1.1);
+}
+
+#six {
+    background-color: #0C0B08;
+}
+
+.sec6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    width: 90%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+    column-gap: 70px;
+}
+
+.card div input {
+    background-color: black;
+    color: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #8740CD;
+    padding: 10px;
+    font-family: 'Poppins';
+    font-size: .9rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    width: 200px;
+    height: 2.5rem;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    color: #FFFFFF;
+    font-size: .9rem;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+.submit:hover {
+    background: linear-gradient(119deg, #95b3fd 0%, #9763cb 53.13%, #5e1a75 100%);
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .img1 {
+        width: 500px;
+    }
+
+    .why-box {
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .img1 {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .img1 {
+        width: 350px;
+    }
+
+    .main {
+        width: 40%;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1.1rem;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .ingredients h1 {
+        font-size: 2rem
+    }
+
+    .ingredients p {
+        width: 70%;
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+    .sec3 {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-box {
+        width: 85%;
+        line-height: 25px;
+    }
+
+    .card_flex {
+        padding: 30px 20px;
+        line-height: 25px;
+    }
+}

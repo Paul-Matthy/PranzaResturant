@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+footer {
+    background: linear-gradient(to bottom, #0C0B08, #0c0b08c7, #000000d5), url(../Images/glass-red-wine-bottle-bar-counter.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.fot1 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 2px;
+}
+
+.container center {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding: 0px 60px;
+}
+
+.left6 {
+    display: flex;
+    align-items: center;
+}
+
+.left6 h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: #bd87f2;
+}
+
+.right6 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loc1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: left; */
+}
+
+.loc1 i {
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.loc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc i {
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.ft {
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 18px;
+    color: #bd87f2;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact i {
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.tel1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.tel2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 56%;
+}
+
+.smedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    padding-top: 25px;
+}
+
+.smedia p {
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 18px;
+    color: #bd87f2;
+    mix-blend-mode: normal;
+    /* opacity: 0.5; */
+}
+
+.smedia i {
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.fot {
+    background: #7BB9FC;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    width: 90%;
+}
+
+.co {
+    display: flex;
+    justify-content: center;
+    color: #bd87f2;
+}
+
+.co p {
+    font-size: .9rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablet devices */
+
+    .container {
+        padding: 50px;
+    }
+
+    .container center {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .left6 {
+        display: flex;
+        justify-content: left;
+    }
+
+    .left6 h2 {
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    .right6 {
+        width: 80%;
+        justify-content: left;
+    }
+
+    .loc1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        justify-content: space-between;
+    }
+
+    .loc {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        justify-content: space-between;
+    }
+
+    .tel1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .tel2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .fot {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Styles for mobile devices */
+    .container {
+        padding: 50px;
+    }
+
+    .container center {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        height: 466px;
+    }
+
+    .left6 {
+        display: flex;
+        justify-content: left;
+    }
+
+    .left6 h2 {
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .right6 {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .ft {
+        font-weight: 400;
+        font-size: .7rem;
+        line-height: 14px;
+        text-align: left;
+    }
+
+    .loc1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .loc1 i {
+        font-size: 1.5rem;
+    }
+
+    .loc {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+
+    .loc i {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .contact i {
+        font-size: 1.5rem;
+    }
+
+    .tel1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .tel2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .smedia {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: start;
+        height: 18px;
+    }
+
+    .smedia p {
+        font-size: .7rem;
+        line-height: 14px;
+    }
+
+    .smedia i {
+        font-size: 1.5rem;
+    }
+
+    .co p {
+        font-size: .6rem;
+    }
+}

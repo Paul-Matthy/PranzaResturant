@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.one {
+    background-image: url(../Images/pexels-yente-van-eynde-sd22222.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+}
+
+.h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+span {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #a05ee1;
+}
+
+.direction p {
+    font-size: 25px;
+}
+
+.two {
+    background-color: #0C0B08;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.center0 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.testimony p {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+.customer {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #bd87f2;
+}
+
+.pple {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    column-gap: 70px;
+    justify-content: center;
+    padding: 70px 0px;
+}
+
+.pple1 {
+    display: flex;
+    width: 100%;
+}
+
+.pple1 img {
+    width: 150px;
+    height: 60%;
+    border-radius: 100%;
+}
+
+.pple1 .t2 {
+    font-size: 25px;
+    color: #a05ee1;
+}
+
+.text {
+    padding-left: 10px;
+}
+
+.three {
+    background-color: #07080c;
+}
+
+.sec3 {
+    padding: 20px 0px;
+}
+
+.left7 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.IG {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+.h7 {
+    margin-top: -9px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #a05ee1;
+}
+
+.T7 {
+    margin-top: -20px;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+}
+
+.photos7 {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    width: 100%;
+}
+
+/* Style the scrollbar thumb and track */
+.photos7::-webkit-scrollbar {
+    width: 0;
+}
+
+.button7 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    background: linear-gradient(119deg, #628EFF 0%, #8740CD 53.13%, #580475 100%);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button7:hover {
+    background: linear-gradient(119deg, #95b3fd 0%, #9763cb 53.13%, #5e1a75 100%);
+}
+
+.img7 {
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 25%;
+    height: 95%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Styles for tablet devices */
+    .container {
+        padding: 0px 50px;
+    }
+
+    .h1 {
+        font-size: 44px;
+    }
+
+    .direction a {
+        font-size: 30px;
+    }
+
+    .direction p {
+        font-size: 30px;
+    }
+
+    .testimony p {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .customer {
+        font-weight: 500;
+        font-size: 45px;
+    }
+
+    .pple {
+        row-gap: 40px;
+        column-gap: 50px;
+        padding: 30px 0px;
+    }
+
+    .pple1 .t1 {
+        font-size: 14px;
+    }
+
+    .pple1 .t2 {
+        margin-top: -.4rem;
+        font-size: 16px;
+    }
+
+    .pple1 .t3 {
+        margin-top: -.7rem;
+        font-size: 16px;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left7 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .IG {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .h7 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .T7 {
+        text-align: center;
+    }
+
+    .photos7 {
+        display: flex;
+        height: 300px;
+    }
+
+    .img7 {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+
+    .container {
+        padding: 0px 50px;
+    }
+
+    .h1 {
+        font-size: 35px;
+    }
+
+    .direction a {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    .direction p {
+        font-size: 20px;
+    }
+
+    .testimony p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .customer {
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .pple {
+        grid-template-columns: auto;
+        row-gap: 40px;
+        column-gap: 50px;
+        padding: 30px 0px;
+    }
+
+    .pple1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pple1 img {
+        border-radius: 0%;
+    }
+
+    .pple1 .t1 {
+        margin-top: -2.5rem;
+        font-size: 12px;
+    }
+
+    .pple1 .t2 {
+        margin-top: -.5rem;
+        font-size: 15px;
+    }
+
+    .pple1 .t3 {
+        margin-top: -.7rem;
+        font-size: 15px;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left7 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .IG {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .h7 {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    .T7 {
+        font-weight: 300;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .photos7 {
+        display: flex;
+        overflow: auto;
+        height: 300px;
+    }
+
+    .img7 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button7 {
+        width: 100px;
+        height: 35px;
+        border: none;
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+}
